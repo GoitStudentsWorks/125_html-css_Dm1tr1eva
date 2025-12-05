@@ -5,6 +5,7 @@
 .footer__content {
   display: flex;
   flex-direction: column;
+  padding: 0 20px;
 }
 .footer__content__nav {
   display: flex;
@@ -84,8 +85,7 @@
 }
 .footer__social-item:hover .footer__social-link > svg,
 .footer__social-item:focus .footer__social-link > svg {
-  fill: #ff0000;
-  stroke: #00f7ff;
+  fill: #00992e;
 }
 .footer__social-link {
   display: block;
@@ -98,7 +98,7 @@
   align-items: center;
   font-style: normal;
   padding: 24px 0;
-  border-top: solid 1px;
+  border-top: solid 1px rgba(3, 10, 6, 0.15);
 }
 .footer__contacts-list {
   display: flex;
@@ -164,7 +164,7 @@
     margin-bottom: 24px;
   }
   .footer__contacts {
-    padding: 15px 0;
+    padding: 16px 0;
   }
   .footer__contacts-list {
     flex-direction: row;
