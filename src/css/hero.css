@@ -80,6 +80,7 @@
     }
 
     .hero__button {
+        display: flex;
         max-width: 148px;
         padding: 12px 23px;
     }
