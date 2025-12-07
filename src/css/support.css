@@ -9,7 +9,7 @@
   height: 428px;
   background-image: image-set(
     url(../img/support/support_paket@1x.webp) 1x,
-    url(../img/support/support_paket@2x.webp)
+    url(../img/support/support_paket@2x.webp) 2x
   );
   background-size: cover;
   background-position: center;
@@ -95,6 +95,34 @@
   font-size: 16px;
   line-height: 160%;
   letter-spacing: 0.01em;
+}
+#user-email {
+  border: 1px solid #ccc;
+  outline: none;
+}
+#user-email:valid {
+  border-color: 1px solid #ccc;
+}
+#user-email:focus:invalid {
+  border-color: #d64040;
+}
+#user-email:focus:invalid::placeholder {
+  color: #d64040;
+}
+.text-invalid {
+  font-family: 'Fira Sans';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: #d64040;
+  display: none;
+}
+.imp-support:not(:placeholder-shown):invalid {
+  border-color: red;
+}
+.imp-support:not(:placeholder-shown):invalid ~ .text-invalid {
+  display: block;
 }
 /* планшет */
 @media screen and (min-width: 768px) {

@@ -1,7 +1,7 @@
-<section class="section-support section">
+<section class="section-support section" id="contacts">
   <div class="div-support container">
     <div class="div-form">
-      <h2 class="h-support">Залишились питання? Зв'яжіться з нами!</h2>
+      <h3 class="h-support">Залишились питання? Зв'яжіться з нами!</h3>
       <p class="p-support">Ми тут, щоб допомогти!</p>
 
       <form class="form-support">
@@ -13,6 +13,8 @@
               type="text"
               id="user-name"
               name="user-name"
+              minlength="5"
+              maxlength="64"
               placeholder="Іван"
             />
           </li>
@@ -26,8 +28,11 @@
               type="email"
               id="user-email"
               name="user-email"
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
               placeholder="hello@ecotote.com"
+              required
             />
+            <p class="text-invalid">Error text</p>
           </li>
 
           <li class="support-item inp-textar">
@@ -37,6 +42,7 @@
               id="message"
               name="message"
               placeholder="Введіть своє повідомлення..."
+              maxlength="500"
             ></textarea>
           </li>
         </ul>
