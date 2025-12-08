@@ -71,11 +71,6 @@
   justify-content: center;
 }
 
-.assortment__button:hover,
-.assortment__button:focus {
-  opacity: 0.5;
-}
-
 @media only screen and (min-width: 768px) {
   .assortment__list {
     flex-direction: row;
