@@ -13,7 +13,7 @@
               type="text"
               id="user-name"
               name="user-name"
-              minlength="5"
+              minlength="2"
               maxlength="64"
               placeholder="Іван"
             />
@@ -32,7 +32,7 @@
               placeholder="hello@ecotote.com"
               required
             />
-            <p class="text-invalid">Error text</p>
+            <p class="text-invalid">Invalid email</p>
           </li>
 
           <li class="support-item inp-textar">
@@ -43,14 +43,14 @@
               name="message"
               placeholder="Введіть своє повідомлення..."
               maxlength="500"
+              required
             ></textarea>
           </li>
         </ul>
 
         <button
-          class="btn-support"
+          class="btn-support button-anim"
           type="submit"
-          aria-label="subscribe button"
           id="send"
           disabled
         >

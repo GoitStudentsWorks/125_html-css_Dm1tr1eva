@@ -170,9 +170,6 @@
 }
 /* комп */
 @media screen and (min-width: 1440px) {
-  body {
-    display: block;
-  }
   .section-support {
     padding: 64px 0;
   }
