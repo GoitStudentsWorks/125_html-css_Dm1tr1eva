@@ -8,8 +8,8 @@
   width: 288px;
   height: 428px;
   background-image: image-set(
-    url(../img/support/support_paket@1x.webp) 1x,
-    url(../img/support/support_paket@2x.webp) 2x
+    url(/img/support/support_paket@1x.webp) 1x,
+    url(/img/support/support_paket@2x.webp) 2x
   );
   background-size: cover;
   background-position: center;
@@ -21,7 +21,7 @@
   flex-direction: column;
   align-items: center;
 }
-.h-support {
+.h-two-support {
   font-family: 'Comfortaa';
   font-weight: 700;
   font-size: 36px;
@@ -30,7 +30,7 @@
   margin-bottom: 24px;
   width: 288px;
 }
-.p-support {
+.h-three-support {
   font-family: inherit;
   font-weight: 400;
   font-size: 18px;
@@ -58,6 +58,7 @@
   border-radius: 6px;
   background-color: #030a060d;
   padding: 8px 12px;
+  outline: none;
 }
 .imp-support::placeholder {
   font-family: inherit;
@@ -73,6 +74,7 @@
   border-radius: 6px;
   background-color: #030a060d;
   padding: 12px;
+  resize: none;
 }
 .textarea-support::placeholder {
   font-family: inherit;
@@ -118,11 +120,24 @@
   color: #d64040;
   display: none;
 }
+
 .imp-support:not(:placeholder-shown):invalid {
   border-color: red;
 }
 .imp-support:not(:placeholder-shown):invalid ~ .text-invalid {
   display: block;
+}
+.btn-support:hover,
+.btn-support:focus {
+  opacity: 0.6;
+}
+.btn-support:active {
+  background: #113916;
+}
+.btn-support:disabled {
+  background-color: #d0d3cd;
+  cursor: not-allowed;
+  opacity: 1;
 }
 /* планшет */
 @media screen and (min-width: 768px) {
@@ -130,12 +145,12 @@
     max-width: 768px;
   }
 
-  .h-support {
+  .h-two-support {
     width: 468px;
   }
   .support-item,
-  .h-support,
-  .p-support,
+  .h-two-support,
+  .h-three-support,
   .imp-support,
   .textarea-support {
     width: 704px;
@@ -147,8 +162,8 @@
     width: 704px;
     height: 428px;
     background-image: image-set(
-      url(../img/support/support_tabl_paket@1x.webp) 1x,
-      url(../img/support/support_tabl_paket@2x.webp) 2x
+      url(/img/support/support_tabl_paket@1x.webp) 1x,
+      url(/img/support/support_tabl_paket@2x.webp) 2x
     );
   }
 }
@@ -182,8 +197,8 @@
     align-items: normal;
   }
 
-  .p-support,
-  .h-support {
+  .h-three-support,
+  .h-two-support {
     width: 644px;
   }
   .img-support {
@@ -198,8 +213,8 @@
     width: 644px;
     height: 768px;
     background-image: image-set(
-      url(../img/support/support_desk_paket@1x.webp) 1x,
-      url(../img/support/support_desk_paket@2x.webp) 2x
+      url(/img/support/support_desk_paket@1x.webp) 1x,
+      url(/img/support/support_desk_paket@2x.webp) 2x
     );
   }
 }
