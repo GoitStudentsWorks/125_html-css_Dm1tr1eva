@@ -75,6 +75,7 @@
   background-color: #030a060d;
   padding: 12px;
   resize: none;
+  outline: none;
 }
 .textarea-support::placeholder {
   font-family: inherit;
