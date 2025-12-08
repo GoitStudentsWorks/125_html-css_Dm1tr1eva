@@ -10,10 +10,20 @@
             </div>
         </div>
         <picture>
-            <source media="(min-width: 1440px)" srcset="/img/hero/desc-hero.webp, /img/hero/desc-hero@2x.webp 2x">
-            <source media="(min-width: 768px)" srcset="/img/hero/tab-hero.webp, /img/hero/tab-hero@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="/img/hero/desc-hero.webp, /img/hero/desc-hero@2x.webp 2x" 
+            width="1312" 
+            height="498">
+            <source media="(min-width: 768px)" srcset="/img/hero/tab-hero.webp, /img/hero/tab-hero@2x.webp 2x" 
+            width="704" 
+            height="267">
             <source media="(max-width: 768px)" srcset="/img/hero/phone-hero.webp, /img/hero/phone-hero@2x.webp 2x">
-            <img class="hero__image" src="/img/hero/phone-hero.webp" alt="two eco bags">
+            <img class="hero__image" src="/img/hero/phone-hero.webp" 
+            alt="two eco bags"
+            fetchpriority="high"
+            width="288" 
+            height="285"
+            >
+            
         </picture>
     </div>
     
