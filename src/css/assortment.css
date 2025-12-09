@@ -12,6 +12,7 @@
   color: #030a06;
   margin-bottom: 32px;
 }
+/*transform: scale(1);*/
 .assortment__list {
   display: flex;
   flex-direction: column;
