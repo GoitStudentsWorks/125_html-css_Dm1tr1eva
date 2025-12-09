@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   /* width: 288px; */
+  margin-bottom: 48px;
 }
 .advantage-section-name-text {
   font-weight: 600;
@@ -31,15 +32,18 @@
 
   line-height: 1.6;
   color: #030a06;
-  margin-bottom: 48px;
+  /* margin-bottom: 48px; */
   font-family: Fira Sans;
+
+  margin-top: 4px;
 }
 .advantage-section-image-box {
   display: flex;
-  gap: 24px;
 }
 .advantage-section-imagine-and-descriptoin-block {
-  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 }
 
 .advantage-section-text-description {
@@ -49,8 +53,8 @@
   /* line-height: 26px; */
   line-height: 1.6;
   color: #030a06;
-  margin-bottom: 48px;
-  font-family: Fira Sans;
+  /* margin-bottom: 48px; */
+  font-family: 'Fira Sans', sans-serif;
 }
 
 .advantage-section-subtitle {
@@ -59,7 +63,7 @@
   line-height: 1.4;
   letter-spacing: 0.01em;
   color: #030a06;
-  margin-top: 4px;
+  margin-top: 8px;
 }
 @media screen and (min-width: 768px) {
   .advantage-section-imagine-and-descriptoin-block {
@@ -113,8 +117,12 @@
     margin-top: 32px;
     margin-bottom: 8px;
   }
-  .advantage-section-text-description {
+  .advantage-section-description-box {
     margin-bottom: 32px;
+  }
+  .advantage-section-text-description {
+    /* margin-bottom: 32px; */
+    max-width: 704px;
   }
   .advantage-section-text {
     margin-bottom: 0;
@@ -136,9 +144,12 @@
     flex-direction: row;
     flex-wrap: nowrap;
   }
+  .advantage-section-description-box {
+    margin-bottom: 80px;
+  }
   .advantage-section-text-description {
     font-size: 18px;
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
   }
   .advantage-section-name-text {
     margin-bottom: 16px;
