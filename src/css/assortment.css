@@ -1,0 +1,109 @@
+.assortment {
+  display: flex;
+  flex-direction: column;
+}
+.assortment__title {
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #030a06;
+  margin-bottom: 32px;
+}
+/*transform: scale(1);*/
+.assortment__list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.assortment__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.assortment__image {
+  border-radius: 32px;
+}
+.assortment__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.assortment__info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+  margin-top: 8px;
+}
+.assortment__name {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+  color: #030a06;
+  margin-top: 16px;
+}
+.assortment__description {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+  color: #030a06;
+  padding: 0 8px;
+}
+.assortment__price {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: center;
+  color: #030a06;
+}
+.assortment__button {
+  width: 100%;
+  height: 40px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #030a06;
+  border: 1px solid #030a06;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+@media only screen and (min-width: 768px) {
+  .assortment__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+  }
+  .assortment__item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .assortment__title {
+    font-size: 48px;
+  }
+  .assortment__list {
+    row-gap: 64px;
+  }
+  .assortment__item {
+    width: calc((100% - 72px) / 4);
+  }
+}
