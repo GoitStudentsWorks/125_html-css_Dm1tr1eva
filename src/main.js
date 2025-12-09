@@ -1,2 +1,2 @@
 import './js/support';
-import './js/assortment';
+import './js/header';
