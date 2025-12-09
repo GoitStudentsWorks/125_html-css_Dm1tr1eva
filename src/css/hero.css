@@ -33,12 +33,15 @@
   padding: 12px 24px;
   width: 288px;
   height: 50px;
-  margin-bottom: 24px;
   font-size: 16px;
   line-height: 1.6;
   color: var(--color-white);
   background-color: #030a06;
   text-align: center;
+}
+
+.hero__content {
+  margin-bottom: 24px;
 }
 
 .button-anim:active {
@@ -48,9 +51,7 @@
 
   .hero__image {
     border-radius: 40px;
-    
   }
-
 
   @media only screen and (min-width: 768px) {
     .hero__container {
@@ -97,7 +98,4 @@
      max-width: 640px;
     }
 
-    .hero__button {
-      margin-bottom: 61px;
-     }
   }
