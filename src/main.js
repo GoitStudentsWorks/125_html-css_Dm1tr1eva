@@ -1,2 +1,3 @@
 import './js/support';
-import './js/header';
+import initMobileMenu from './js/header.js';
+initMobileMenu;
